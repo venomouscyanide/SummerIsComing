@@ -3,7 +3,9 @@ from Classes.conqueror import conqueror_army
 
 def initialize():
 
-	#kingdoms
+	'''
+	Helps to initialize values as per the problem statement
+	'''
 	land=southeros("Land","Panda")
 	water=southeros("Water","Octopus")
 	ice=southeros("Ice","Mammoth")

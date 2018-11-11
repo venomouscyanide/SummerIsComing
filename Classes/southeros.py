@@ -1,24 +1,38 @@
 
 class southeros():
 
-	def __init__(self,name=None,animal=None,withShah=False,message=None):
+	def __init__(self,name=None,animal=None,withConqueror=False,message=None):
 		self.__name=name
 		self.__message=message
-		self.__withShah=withShah
+		self.__withConqueror=withConqueror
 		self.__animal=animal
 		pass
 
 	def get_details(self):
-		return(self.__name,self.__message,self.__withShah,self.__animal)
+		'''
+		returns necessary details
+		'''
+		return(self.__name,self.__message,self.__withConqueror,self.__animal)
 
 	def add_message(self,message):
+		'''
+		add message meant for the kingdom
+		'''
 		self.__message=message
 
 	def side_with_conqueror(self):
-		self.__withShah=True
+		'''
+		to take allegiance or not
+		'''
+		self.__withConqueror=True
 
 	def decide_to_side_helper(self):
-		#check if __message contains the __animal
+		'''
+		make two dictionaries with letter occurances
+		in the animal and the message to be sent to the 
+		find_allegiance() to decide if the kingdom takes
+		side with conqueror
+		'''
 		animal_dic={}
 		message_dic={}
 
